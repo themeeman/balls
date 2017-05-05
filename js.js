@@ -3,5 +3,5 @@ function random(min, max) {
 }
 function spawnball() {
   var ball = document.getElementById("ball");
-  alert(ball.height)
+  alert(ball.id)
 }
