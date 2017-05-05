@@ -5,4 +5,5 @@ function spawnball() {
   var ball = document.getElementById("ball");
   ball.style.top = random(1, 100) + "px";
   ball.style.left = random(1, 100) + "px";
+  ball.style.color = "red"
 }
