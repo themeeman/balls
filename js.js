@@ -6,4 +6,5 @@ function spawnball() {
   ball.style.top = random(1, 100) + "px";
   ball.style.left = random(1, 100) + "px";
   ball.style.cssText += "background-color: '#FF0000';";
+  alert(ball.style.cssText);
 }
