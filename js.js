@@ -17,7 +17,7 @@ function spawnball() {
   removeballs();
 }
 function removeballs() {
-  var balls = body.getElementsByClassName("ball");
+  var balls = document.getElementsByClassName("ball");
   for (var i = 0; i < balls.length; i++) {
     alert(balls[i]);
   }
