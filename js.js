@@ -19,8 +19,8 @@ function spawnball() {
 function removeballs() {
   var balls = document.getElementsByClassName("ball");
   for (var i = 0; i < balls.length; i++) {
-    var x = parseInt(balls[i].left);
-    var y = parseInt(balls[i].top);
+    var x = parseInt(balls[i].style.left);
+    var y = parseInt(balls[i].style.top);
     alert(x);
     alert(y);
     if (y > window.innerHeight || x > window.innerWidth) {
