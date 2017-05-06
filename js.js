@@ -7,7 +7,12 @@ function spawnball() {
   ball.id = "ball" + ballid;
   ballid += 1;
   ball.class = "ball";
-  'ball.style.top = random(1, 100) + "px";'
-  'ball.style.left = random(1, 100) + "px";'
+  ball.style.top = random(1, 100) + "px";
+  ball.style.left = random(1, 100) + "px";
+  ball.style.backgroundColor = 'black';
+  ball.style.borderRadius = '50%';
+  ball.style.width = '10px';
+  ball.style.height: '10px';
+  ball.style.position: 'absolute';
   document.body.appendChild(ball);
 }
