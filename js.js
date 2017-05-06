@@ -11,7 +11,7 @@ function spawnball() {
   ball.style.top = random(1, window.innerHeight-size) + "px";
   ball.style.left = random(1, window.innerWidth-size) + "px"
   ball.style.backgroundColor = "rgb(" + random(0,255) + "," + random(0,255) + "," + random(0,255) + ")";
-  ball.style.height = size;
-  ball.style.width = size;
+  ball.style.height = size + "px";
+  ball.style.width = size + "px";
   document.body.appendChild(ball);
 }
