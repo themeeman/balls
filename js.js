@@ -21,7 +21,7 @@ function removeballs() {
   for (var i = 0; i < balls.length; i++) {
     var x = parseInt(balls[i].left);
     var y = parseInt(balls[i].top);
-    if (y > window.innerHeight || x > window.innerHeight) {
+    if (y > window.innerHeight || x > window.innerWidth) {
       var elem = document.getElementById("ball" + i);
       elem.parentNode.removeChild(elem);
       alert(elem.id);
