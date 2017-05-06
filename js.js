@@ -7,8 +7,7 @@ function spawnball() {
   ball.id = "ball" + ballid;
   ballid += 1;
   ball.class = "ball";
-  ball.style.top = random(1, 100) + "px";
-  ball.style.left = random(1, 100) + "px";
+  'ball.style.top = random(1, 100) + "px";
+  'ball.style.left = random(1, 100) + "px";
   document.body.appendChild(ball);
-  alert(Window.getComputedStyle(ball));
 }
