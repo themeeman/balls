@@ -14,9 +14,10 @@ function spawnball() {
   ball.style.height = size + "px";
   ball.style.width = size + "px";
   document.body.appendChild(ball);
-  alert(Document.getElementsByClassName("ball"));
 }
 function removeballs() {
   var balls = Document.getElementsByClassName("ball");
-  
+  for (var i = 0; i < balls.length; i++) {
+    alert(balls[i]);
+  }
 }
