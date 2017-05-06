@@ -3,6 +3,7 @@ function random(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 function spawnball() {
+  var si
   var ball = document.createElement("div");
   ball.id = "ball" + ballid;
   ballid += 1;
