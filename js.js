@@ -13,7 +13,8 @@ function spawnball() {
   ball.style.backgroundColor = "rgb(" + random(0,255) + "," + random(0,255) + "," + random(0,255) + ")";
   ball.style.height = size + "px";
   ball.style.width = size + "px";
-  document.body.appendChild(Document.getElementsByClassName("ball"););
+  document.body.appendChild(ball);
+  alert(Document.getElementsByClassName("ball"));
 }
 function removeballs() {
   var balls = Document.getElementsByClassName("ball");
