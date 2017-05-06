@@ -10,5 +10,5 @@ function spawnball() {
   ball.style.top = random(1, 100) + "px";
   ball.style.left = random(1, 100) + "px";
   document.body.appendChild(ball);
-  alert(ball.style.backgroundColor);
+  alert(ball.style);
 }
