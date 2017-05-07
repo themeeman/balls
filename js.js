@@ -25,6 +25,7 @@ function removeballs() {
     if (y > window.innerHeight || x > window.innerWidth) {
       var elem = document.getElementById(balls[i].id);
       elem.parentNode.removeChild(elem);
+      alert(balls.length);
     }
   }
 }
