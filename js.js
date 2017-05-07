@@ -26,6 +26,7 @@ function removeballs() {
       balls[i].style.top = y % window.innerHeight;
       balls[i].style.left = x % window.innerWidth;
       alert(balls[i].id);
+      document.body.appendChild(balls[i]);
     }
   }
 }
