@@ -3,6 +3,6 @@
   position: absolute;
 }
 body {
-  position: fixed;
+  overflow: hidden;
 }
 
