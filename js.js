@@ -22,12 +22,9 @@ function removeballs() {
   for (var i = 0; i < balls.length; i++) {
     var x = parseInt(balls[i].style.left);
     var y = parseInt(balls[i].style.top);
-    alert(x);
-    alert(y);
     if (y > window.innerHeight || x > window.innerWidth) {
       var elem = document.getElementById(balls[i].id);
       elem.parentNode.removeChild(elem);
-      alert(elem.id);
     }
   }
 }
