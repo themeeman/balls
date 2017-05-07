@@ -18,14 +18,20 @@ function spawnball() {
 }
 function removeballs() {
   var balls = document.getElementsByClassName("ball");
+  var pos = [];
   alert("Height " + window.innerHeight + " Width " + window.innerWidth);
   for (var i = 0; i < balls.length; i++) {
-    var x = parseInt(balls[i].style.left);
-    var y = parseInt(balls[i].style.top);
+    pos.push([balls[i].style.left, balls[i].style.top]);
+  }
+  alert(pos);
+  for (var i = 0; i < pos.length; i++) {
+    var x = parseInt(pos[i][0]);
+    var y = parseInt(pos[i][1]);
     if (y > window.innerHeight || x > window.innerWidth) {
       var elem = document.getElementById(balls[i].id);
       elem.parentNode.removeChild(elem);
       alert(balls.length);
+      
     }
   }
 }
