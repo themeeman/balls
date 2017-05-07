@@ -23,9 +23,9 @@ function removeballs() {
     var x = parseInt(balls[i].style.left);
     var y = parseInt(balls[i].style.top);
     if (y > window.innerHeight || x > window.innerWidth) {
-      var elem = document.getElementById(balls[i].id);
-      elem.style.top = y % window.innerHeight;
-      elem.style.left = x % window.innerWidth;
+      balls[i].style.top = y % window.innerHeight;
+      balls[i].style.left = x % window.innerWidth;
+      alert(balls[i].id);
     }
   }
 }
