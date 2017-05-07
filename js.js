@@ -23,10 +23,10 @@ function removeballs() {
     var x = parseInt(balls[i].style.left);
     var y = parseInt(balls[i].style.top);
     if (y > window.innerHeight || x > window.innerWidth) {
-      balls[i].style.top = y % window.innerHeight;
-      balls[i].style.left = x % window.innerWidth;
+      balls[i].style.top = y % window.innerHeight + "px";
+      balls[i].style.left = x % window.innerWidth + "px";
       alert(balls[i].id);
-      document.body.appendChild(balls[i]);
+      /*document.body.appendChild(balls[i]);*/
     }
   }
 }
