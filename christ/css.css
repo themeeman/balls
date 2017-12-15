@@ -1,0 +1,8 @@
+.ball {
+  border-radius: 50%;
+  position: absolute;
+}
+body {
+  overflow: hidden;
+}
+
